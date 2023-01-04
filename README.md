@@ -50,6 +50,7 @@
 
 #### :+1: 좋은 예시 ####
 
-출처: https://dct-wonjung.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9B%90%EB%A6%AC-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-SOLID
+
+[출처](https://dct-wonjung.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9B%90%EB%A6%AC-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-SOLID)
 
 
