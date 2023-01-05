@@ -87,6 +87,36 @@ public class Sports {
 }
 ````
 
+#### 물론 아래와 같이 제너릭을 이용해서 구현 할 수 있다. ####
+````java
+public class Application {
+	public static void main(String[] args) {
+		Driver<?> driver = new Driver<>(new Truck());
+		String driving = driver.drive();
+		System.out.println(driving);
+	}
+}
+````
+````java
+public class Driver<T> {
+	private Truck truck;
+	private Sports sports;
+	private String driving;
+	public Driver(T t) {
+		if(t instanceof Truck) {
+			truck = new Truck();
+			driving = truck.drive();
+		} else if(t instanceof Sports) {
+			sports = new Sports();
+			driving = sports.drive();
+		}
+	}
+	public String drive() {
+		return driving;
+	}
+}
+````
+
 #### :+1: GOOD ####
 
 
