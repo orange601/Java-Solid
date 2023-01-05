@@ -22,6 +22,31 @@
 - 인터페이스를 구현한 새로운 클래스를 하나 만들어서 새로운 기능을 구현한다면, 확장은 했지만 변경은 생기지 않는다.
 - **역할**과 **구현**을 분리해서 생각해야 한다.
 
+#### 👎 BAD ####
+````java
+@RestController
+public class SampleApi {
+	private TruckService truckService;
+	@GetMapping("/drive")
+	public String truck() {
+		truckService = new TruckService(new TruckRepository());
+		return truckService.drive();
+	}
+}
+````
+````java
+@Service
+public class TruckService {
+	private TruckRepository truckRepository;
+	public TruckService(TruckRepository truckRepository) {
+		this.truckRepository = truckRepository;
+	}
+	public String drive() {
+		return truckRepository.drive();
+	}
+}
+````
+
 ### 3. LSP (Liskov Subsititution Principle: 리스코프 치환 원칙) ###
 ````
 프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다.
