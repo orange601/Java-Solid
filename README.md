@@ -61,11 +61,15 @@ public class Application {
 ````java
 public class Driver {
 	private Truck truck;
-	public Driver(Truck truck) {
-		this.truck = truck;
-	}
-	public void truckDrive() {
-		System.out.println(truck.drive());
+	private Sports sports;
+	public void drive(String type) {
+		if(type.equals("트럭")) {
+			truck = new Truck();
+			System.out.println(truck.drive());
+		} else if(type.equals("스포츠카")) {
+			sports = new Sports();
+			System.out.println(sports.drive());
+		}
 	}
 }
 ````
