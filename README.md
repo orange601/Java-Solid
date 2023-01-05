@@ -52,7 +52,7 @@
 // Main함수는 Client이므로 핵심은 Driver 클래스이다.
 public class Application {
 	public static void main(String[] args) {
-    // 어떤차를 탈지 마음대로 결정할 수 있음
+		// 어떤차를 탈지 마음대로 결정할 수 있음
 		Driver driver = new Driver(new Truck());
 		driver.truckDrive();
 	}
