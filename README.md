@@ -48,6 +48,35 @@
 - 그래서 유연하게 구현체를 변경할 수 있다. 구현제에 의존하게 되면 변경이 어려워진다.
 
 #### :-1: BAD ####
+````java
+// Main함수는 Client이므로 핵심은 Driver 클래스이다.
+public class Application {
+	public static void main(String[] args) {
+    // 어떤차를 탈지 마음대로 결정할 수 있음
+		Driver driver = new Driver(new Truck());
+		driver.truckDrive();
+	}
+}
+````
+
+````java
+public class Driver {
+	private Truck truck;
+	public Driver(Truck truck) {
+		this.truck = truck;
+	}
+	public void truckDrive() {
+		System.out.println(truck.drive());
+	}
+}
+````
+````java
+public class Truck {
+	public String drive() {
+		return "트럭운전";
+	}
+}
+````
 #### :+1: GOOD ####
 
 
