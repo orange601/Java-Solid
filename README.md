@@ -47,6 +47,7 @@ public class TruckService {
 }
 ````
 
+
 ### 3. LSP (Liskov Subsititution Principle: 리스코프 치환 원칙) ###
 ````
 프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다.
