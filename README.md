@@ -74,6 +74,18 @@ public class Driver {
 	}
 }
 ````
+````java
+public class Truck {
+	public String drive() {
+		return "트럭운전";
+	}
+}
+public class Sports {
+	public String drive() {
+		return "스포츠카운전";
+	}
+}
+````
 
 #### :+1: GOOD ####
 
