@@ -53,7 +53,7 @@
 public class Application {
 	public static void main(String[] args) {
 		// 어떤차를 탈지 마음대로 결정할 수 있음
-		Driver driver = new Driver(new Truck());
+		Driver driver = new Driver();
 		driver.drive("트럭");
 	}
 }
