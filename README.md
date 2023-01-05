@@ -129,7 +129,7 @@ public class Application {
 }
 ````
 ````java
-// 드라이버는 구현체가 추상화에 기존한다. DIP 만족
+// 드라이버는 구현체가 아닌 추상화에 의존한다. DIP 만족
 // 캠핑카가 추가 되어도(확장) Driver는 변경되지 않는다. OCP 만족
 public class Driver {
 	private Car car;
