@@ -118,6 +118,28 @@ public class Driver<T> {
 ````
 
 #### :+1: GOOD ####
+````java
+public class Application {
+	public static void main(String[] args) {
+		Driver driver = new Driver(new Truck());
+		String driving = driver.drive();
+		System.out.println(driving);
+	}
+}
+````
+````java
+// 드라이버는 구현체가 추상화에 기존한다. DIP 만족
+// 캠핑카가 추가 되어도(**확장**) Driver는 **변경**되지 않는다. OCP 만족
+public class Driver {
+	private Car car;
+	public Driver(Car car) {
+		this.car = car;
+	}
+	public String drive() {
+		return car.drive();
+	}
+}
+````
 
 
 [출처](https://dct-wonjung.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9B%90%EB%A6%AC-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-SOLID)
