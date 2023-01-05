@@ -17,30 +17,26 @@
 ````
 소프트웨어 요소는 확장에는 열려 있으나 변경에는 닫혀 있어야 한다.
 ````
-- 확장을 하는데 기존 코드를 변경하지 않을 수 있을까?
-- 이를 위해서 다형성을 활용해야 한다.
 - 인터페이스를 구현한 새로운 클래스를 하나 만들어서 새로운 기능을 구현한다면, 확장은 했지만 변경은 생기지 않는다.
-- **역할**과 **구현**을 분리해서 생각해야 한다.
+
 
 #### 👎 BAD ####
 ````java
 @RestController
+@RequiredArgsConstructor
 public class SampleApi {
-	private TruckService truckService;
+	private final DriveService driveService;
 	@GetMapping("/drive")
 	public String truck() {
-		truckService = new TruckService(new TruckRepository());
-		return truckService.drive();
+		return driveService.drive();
 	}
 }
 ````
 ````java
 @Service
-public class TruckService {
-	private TruckRepository truckRepository;
-	public TruckService(TruckRepository truckRepository) {
-		this.truckRepository = truckRepository;
-	}
+@RequiredArgsConstructor
+public class DriveService {
+	private final TruckRepository truckRepository;
 	public String drive() {
 		return truckRepository.drive();
 	}
