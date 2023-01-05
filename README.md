@@ -5,6 +5,7 @@
 ## 객체 지향 설계의 5원칙 (SOLID 원칙) ##
 - 스프링은 제어의 역전, 의존관계 주입을 통해 다형성을 극대화해서 이용할 수 있게 도와준다.
 - 스프링을 사용하면 역할과 구현을 편리하게 다룰 수 있다. 
+- [출처](https://dct-wonjung.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9B%90%EB%A6%AC-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-SOLID)
 
 ### 1. SRP (Single Responsibility Principle: 단일 책임 원칙) ###
 ````
@@ -153,7 +154,8 @@ public class Sports implements Car {
 		return "스포츠카운전중입니다.";
 	}
 }
+````
 
-[출처](https://dct-wonjung.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9B%90%EB%A6%AC-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-SOLID)
+
 
 
