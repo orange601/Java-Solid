@@ -59,6 +59,7 @@ public class Application {
 }
 ````
 ````java
+// 만약 캠핑카가 추가 된다면 if문에 추가 돼야한다.
 public class Driver {
 	private Truck truck;
 	private Sports sports;
@@ -73,33 +74,7 @@ public class Driver {
 	}
 }
 ````
-````java
-// client가 스포츠카로 변경한다면
-public class Application {
-	public static void main(String[] args) {
-		Driver ds = new Driver(new Sports());
-		ds.sportsDrive();
-	}
-}
-````
-````java
-public class Driver {
-	private Truck truck;
-	private Sports sports;
-	public Driver(Truck truck) {
-		this.truck = truck;
-	}
-	public Driver(Sports sports) {
-		this.sports = sports;
-	}
-	public void truckDrive() {
-		System.out.println(truck.drive());
-	}
-	public void sportsDrive() {
-		System.out.println(sports.drive());
-	}
-}
-````
+
 #### :+1: GOOD ####
 
 
