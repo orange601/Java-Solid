@@ -17,7 +17,7 @@
 소프트웨어 요소는 확장에는 열려 있으나 변경에는 닫혀 있어야 한다.
 ````
 - 확장을 하는데 기존 코드를 변경하지 않을 수 있을까?
--이를 위해서 다형성을 활용해야 한다. 
+- 이를 위해서 다형성을 활용해야 한다.
 - 인터페이스를 구현한 새로운 클래스를 하나 만들어서 새로운 기능을 구현한다면, 확장은 했지만 변경은 생기지 않는다.
 - **역할**과 **구현**을 분리해서 생각해야 한다.
 
@@ -54,7 +54,7 @@ public class Application {
 	public static void main(String[] args) {
 		// 어떤차를 탈지 마음대로 결정할 수 있음
 		Driver driver = new Driver(new Truck());
-		driver.truckDrive();
+		driver.drive("트럭");
 	}
 }
 ````
