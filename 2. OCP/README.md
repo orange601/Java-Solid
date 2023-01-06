@@ -1,5 +1,6 @@
 # OCP (Open-Closed Principle: 개방 폐쇄 원칙) #
 - 확장에 대해서는 개방(OPEN)되어야 하지만 변경에 대해서는 폐쇄(CLOSE)되어야 한다.
+- [출처:우아한테크코스](https://www.youtube.com/watch?v=90ZDvHl8ROE)
 
 ## 👎 BAD ##
 ````java
