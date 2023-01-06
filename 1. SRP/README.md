@@ -1,4 +1,4 @@
-### SRP (Single Responsibility Principle: 단일 책임 원칙) ###
+# SRP (Single Responsibility Principle: 단일 책임 원칙) #
 
 ````java
 public class Gym {
