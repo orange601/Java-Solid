@@ -45,3 +45,4 @@ public class LottoNumbersAutoGenerator {
 	}
 }
 ````
+:no_entry_sign: Close 위반
