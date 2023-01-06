@@ -57,7 +57,7 @@ public interface ShuffleStrategy {
 ````java
 // 인터페이스를 의존하도록 코드 작성 후 변경되는 부분을 인터페이스로 추출한다.
 public class LottoNumbersAutoGenerator {
-	private ShuffleStrategy shuffleStrategy;
+	private ShuffleStrategy shuffleStrategy; // 구현체에 의존하지 않도록 조심해야 한다.(DIP)
 	
 	public LottoNumbersAutoGenerator(ShuffleStrategy shuffleStrategy) {
 		this.shuffleStrategy = shuffleStrategy;
@@ -73,6 +73,16 @@ public class LottoNumbersAutoGenerator {
 	    	numbers = shuffleStrategy.shuffle(numbers);
 			
 		return numbers.subList(0, 6);
+	}
+}
+````
+````java
+// 구현체
+public class ShuffleRandomStrategy implements ShuffleStrategy {
+	@Override
+	public List<Integer> shuffle(List<Integer> numbers) {
+		Collections.shuffle(numbers);
+		return numbers;
 	}
 }
 ````
