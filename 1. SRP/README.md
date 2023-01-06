@@ -54,3 +54,53 @@ public class ParkingLot {
 2. 그럼, Gym에서 블랙컨슈머를 삭제하고 주차장에서도 블랙컨슈머를 삭제해야한다.
 3. 같은일을 두번작업해야 된다.
 4. 또한, 헬스장 주인은 차를 갖고 다니지 않아서 주차장에 관한일은 생각지도 못해 조건을 지우지 못하는 경우도 발생한다.
+
+
+## 👍 GOOD ##
+````java
+public class Member {
+	private Date expireDate;
+	private boolean isBlackConsumer = false;
+	public boolean isBlackConsumer() {
+		return isBlackConsumer;
+	}
+	public Date getExpireDate() {
+		return expireDate;
+	}
+	public boolean isNormalUser() {
+		if(expireDate.getDate() > System.currentTimeMillis()
+				&& !isBlackConsumer) {
+			return true;
+		}
+		return false;
+	}
+}
+````
+````java
+public class Gym {
+	private Member member;
+	public Gym(Member member) {
+		this.member = member;
+	}
+	public boolean open() {
+		if(member.isNormalUser()) {
+			return true;
+		}
+		return false;
+	}
+}
+````
+````java
+public class ParkingLot {
+	private Member member;
+	public ParkingLot(Member member) {
+		this.member = member;
+	}
+	public boolean open() {
+		if(member.isNormalUser()) {
+			return true;
+		}
+		return false;
+	}
+}
+````
