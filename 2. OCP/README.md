@@ -36,7 +36,7 @@ public class LottoNumbersAutoGenerator {
 		} else if(shuffle.equals("NOTHING")){ // 1 ~ 6
 			Collections.sort(numbers);
 		} else if(shuffle.equals("REVERSE")){ // 45 ~ 40
-		    Collections.reverse(numbers);
+			Collections.reverse(numbers);
 		}
 			
 		// 변경이 되지 않는 코드
