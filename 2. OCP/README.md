@@ -55,6 +55,7 @@ public interface ShuffleStrategy {
 }
 ````
 ````java
+// 인터페이스를 의존하도록 코드 작성
 public class LottoNumbersAutoGenerator {
 	private ShuffleStrategy shuffleStrategy;
 	
@@ -67,7 +68,8 @@ public class LottoNumbersAutoGenerator {
 	    	for(int i = 1; i <= 45; i++) {
 	    		numbers.add(i);
 	    	}
-	  
+		
+		// 변경되는 부분을 인터페이스 함수로 사용한다.
 	    	numbers = shuffleStrategy.shuffle(numbers);
 			
 		return numbers.subList(0, 6);
