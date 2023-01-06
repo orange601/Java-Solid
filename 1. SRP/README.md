@@ -3,6 +3,7 @@
 
 ## 👎 BAD ##
 ````java
+// Date 객체와 getDate() 함수를 사용해서 불편한 기분은 잠시 잊고, Gym객체에 집중하자
 public class Gym {
 	private Member member;
 	public Gym(Member member) {
@@ -19,7 +20,6 @@ public class Gym {
 	}
 }
 ````
-~~Date 객체와 getDate() 함수를 사용해서 불편한 기분은 잠시 잊고, Gym객체에 집중하자~~
 ````java
 public class Member {
 	private Date expireDate;
