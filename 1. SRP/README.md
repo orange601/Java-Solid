@@ -1,5 +1,5 @@
 # SRP (Single Responsibility Principle: 단일 책임 원칙) #
-- 클래스를 변경해야 하는 이유는 오직 하나뿐이어야 한다.
+- 하나의 클래스는 하나의 책임만 가져야 한다.
 
 ## 👎 BAD ##
 ````java
