@@ -114,4 +114,4 @@ public class Application {
 ````
 
 ## 전략패턴 ##
-- OCP를 준수하기 위한 패턴
+- OCP를 준수하기 위해 여태 한 패턴이 전략 패턴이다.
