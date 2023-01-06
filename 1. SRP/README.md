@@ -82,6 +82,7 @@ public class Gym {
 	public Gym(Member member) {
 		this.member = member;
 	}
+	// 헬스장은 정상적인 회원인지만 확인한 후 문을 열어주면 된다.
 	public boolean open() {
 		if(member.isNormalUser()) {
 			return true;
@@ -96,6 +97,7 @@ public class ParkingLot {
 	public ParkingLot(Member member) {
 		this.member = member;
 	}
+	// 주차장 또한 정상적인 회원인지만 확인한 후 문을 열어주면 된다.
 	public boolean open() {
 		if(member.isNormalUser()) {
 			return true;
