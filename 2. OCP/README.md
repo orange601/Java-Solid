@@ -132,3 +132,9 @@ public class Application {
 - 전략패턴에서 명시한 알고리즘을 실제로 구현한 클래스
 
 ![0_k-vRRyR0Ncx7NVSy](https://user-images.githubusercontent.com/24876345/210935137-2178dc58-2ec3-4076-a359-4aadde2383e1.png)
+
+
+### 템플릿메서드패턴 VS 전략 패턴 ####
+- 둘다 OCP를 준수하기 위한 패턴
+- 상속을 사용한 방법이 템플릿메서드패턴이다.
+- 컴포지션을 사용한 방법이 전략패턴이다.
