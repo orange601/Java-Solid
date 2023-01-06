@@ -34,6 +34,7 @@ public class Member {
 
 1. 만약 헬스장 회원이 주차장을 이용한다면 주차장에서도 이용이 가능한 회원인지 확인해야 된다.
 2. isNormalUser() 이라는 함수를 또 만든다.
+3. 휴 이런 엄청난 일을 2번이나 하다니 난 대단해
 ````java
 public class ParkingLot {
 	private Member member;
