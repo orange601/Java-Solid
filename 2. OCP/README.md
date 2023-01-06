@@ -86,3 +86,12 @@ public class ShuffleRandomStrategy implements ShuffleStrategy {
 	}
 }
 ````
+````java
+public class ShuffleReverseStrategy implements ShuffleStrategy {
+	@Override
+	public List<Integer> shuffle(List<Integer> numbers) {
+		Collections.reverse(numbers);
+		return numbers;
+	}
+}
+````
