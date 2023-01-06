@@ -75,6 +75,7 @@ public interface Car {
 ````
 
 ````java
+// 차량 종류가 추가 되어도(OPEN), 비즈니스 구간에는 변경(CLOSE)이 없다.
 public class Driver {
 	private Car car;
 	public Driver(Car car) {
