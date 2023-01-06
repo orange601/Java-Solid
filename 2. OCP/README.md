@@ -20,7 +20,7 @@ public class LottoNumbersAutoGenerator {
 	}
 }
 ````
-
+:no_entry_sign: Close 위반
 ````java
 // 정렬 기능과 역순 기능을 추가하게 되면 비즈니스구간에 변경(CLOSE)이 발생한다.
 public class LottoNumbersAutoGenerator {
@@ -45,4 +45,32 @@ public class LottoNumbersAutoGenerator {
 	}
 }
 ````
-:no_entry_sign: Close 위반
+
+## 👍 GOOD ## 
+````java
+// 인터페이스 추가
+@FunctionalInterface
+public interface ShuffleStrategy {
+	public List<Integer> shuffle(final List<Integer> numbers);
+}
+````
+````java
+public class LottoNumbersAutoGenerator {
+	private ShuffleStrategy shuffleStrategy;
+	
+	public LottoNumbersAutoGenerator(ShuffleStrategy shuffleStrategy) {
+		this.shuffleStrategy = shuffleStrategy;
+	}
+	
+	public List<Integer> generate(String shuffle) {
+		List<Integer> numbers = new ArrayList<>();
+	    	for(int i = 1; i <= 45; i++) {
+	    		numbers.add(i);
+	    	}
+	  
+	    	numbers = shuffleStrategy.shuffle(numbers);
+			
+		return numbers.subList(0, 6);
+	}
+}
+````
