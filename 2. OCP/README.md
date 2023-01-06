@@ -116,20 +116,20 @@ public class Application {
 ## 전략패턴 ##
 - OCP를 준수하기 위해 여태 한 패턴이 전략 패턴이다.
 - 디자인 패턴의 꽃
+- Context, Strategy, ConcreteStrategy를 나누어서 별도로 분리하는 설계 방법
 
-#### 전략이란? ####
-- 어떤 목적을 달성하기 위해 일을 수행하는 방식
-- 비즈니스 규칙, 문제를 해결하는 알고리즘(위에서 했던 Random, Reverse, Nothing을 의미)
-
-#### Context ####
+#### 1. Context ####
 - Strategy 패턴을 이용하는 역할 수행
 - 필요에 따라 동적으로 구체적인 전략을 바꿀수 있도록 한다.
+- 여기에서 LottoNumbersAutoGenerator를 가리킨다.
 
-#### Strategy ####
+#### 2. Strategy ####
 - 인터페이스나 추상클래스로 외부에서 동일한 방식으로 알고리즘을 호출하는 방법을 명시한다.
+- 여기에서 ShuffleStrategy 카리킨다.
 
-#### ConcreteStrategy ####
+#### 3. ConcreteStrategy ####
 - 전략패턴에서 명시한 알고리즘을 실제로 구현한 클래스
+- 여기에서 ShuffleRandomStrategy, ShuffleReverseStrategy 등의 구현체를 가리킨다.
 
 ![0_k-vRRyR0Ncx7NVSy](https://user-images.githubusercontent.com/24876345/210935137-2178dc58-2ec3-4076-a359-4aadde2383e1.png)
 
