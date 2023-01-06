@@ -69,6 +69,7 @@ public class Application {
 ````
 
 ````java
+// 구현체가 아닌 추상화에 의존할 수 있도록 Car 인터페이스를 추가한다.
 public interface Car {
 	public String drive();
 }
