@@ -112,3 +112,6 @@ public class Application {
 	}
 }
 ````
+
+## 전략패턴 ##
+- OCP를 준수하기 위한 패턴
