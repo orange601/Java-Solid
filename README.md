@@ -56,11 +56,12 @@ public class Driver {
 }
 ````
 
-### 👍 ###
+### 👍 GOOD ###
 ````java
+// client 구간이므로 여기서의 변경은 OCP와 무관하다.
 public class Application {
 	public static void main(String[] args) {
-		Driver car = new Driver(new Truck());
+		Driver car = new Driver(new Truck()); // Client가 원하는 차량을 고른다.
 		String drive = car.drive();
 		System.out.println(drive);
 	}
