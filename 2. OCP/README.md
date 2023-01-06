@@ -55,7 +55,7 @@ public interface ShuffleStrategy {
 }
 ````
 ````java
-// 인터페이스를 의존하도록 코드 작성
+// 인터페이스를 의존하도록 코드 작성 후 변경되는 부분을 인터페이스로 추출한다.
 public class LottoNumbersAutoGenerator {
 	private ShuffleStrategy shuffleStrategy;
 	
