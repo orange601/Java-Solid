@@ -77,7 +77,7 @@ public class LottoNumbersAutoGenerator {
 }
 ````
 ````java
-// 구현체
+// 랜덤-구현체
 public class ShuffleRandomStrategy implements ShuffleStrategy {
 	@Override
 	public List<Integer> shuffle(List<Integer> numbers) {
@@ -87,6 +87,7 @@ public class ShuffleRandomStrategy implements ShuffleStrategy {
 }
 ````
 ````java
+// 역순-구현체
 public class ShuffleReverseStrategy implements ShuffleStrategy {
 	@Override
 	public List<Integer> shuffle(List<Integer> numbers) {
