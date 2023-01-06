@@ -43,6 +43,7 @@ public class Application {
 }
 ````
 ````java
+// 차 종류가 생기면 if문이 추가된다. (변경이 발생)
 public class Driver {
 	public String drive(String type) {
 		if(type.equals("트럭")) {
