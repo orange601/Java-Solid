@@ -56,6 +56,34 @@ public class Driver {
 }
 ````
 
+### 👍 ###
+````java
+public class Application {
+	public static void main(String[] args) {
+		Driver car = new Driver(new Truck());
+		String drive = car.drive();
+		System.out.println(drive);
+	}
+}
+````
+
+````java
+public interface Car {
+	public String drive();
+}
+````
+
+````java
+public class Driver {
+	private Car car;
+	public Driver(Car car) {
+		this.car = car;
+	}
+	public String drive() {
+		return car.drive();
+	}
+}
+````
 
 ### 3. LSP (Liskov Subsititution Principle: 리스코프 치환 원칙) ###
 ````
