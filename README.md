@@ -34,23 +34,23 @@
 
 #### 👎 BAD ####
 ````java
-@RestController
-@RequiredArgsConstructor
-public class SampleApi {
-	private final DriveService driveService;
-	@GetMapping("/drive")
-	public String truck() {
-		return driveService.drive();
+public class Application {
+	public static void main(String[] args) {
+		Driver driver = new Driver();
+		String car = driver.drive("스포츠카");
+		System.out.println(car);
 	}
 }
 ````
 ````java
-@Service
-@RequiredArgsConstructor
-public class DriveService {
-	private final TruckRepository truckRepository;
-	public String drive() {
-		return truckRepository.drive();
+public class Driver {
+	public String drive(String type) {
+		if(type.equals("트럭")) {
+			return "수동운전";
+		} else if(type.equals("스포츠카")) {
+			return "자동운전";
+		}
+		return "그런종류의차는없어";
 	}
 }
 ````
