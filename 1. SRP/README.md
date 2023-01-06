@@ -21,18 +21,6 @@ public class Gym {
 }
 ````
 ````java
-public class Member {
-	private Date expireDate;
-	private boolean isBlackConsumer = false;
-	public boolean isBlackConsumer() {
-		return isBlackConsumer;
-	}
-	public Date getExpireDate() {
-		return expireDate;
-	}
-}
-````
-````java
 // 만약 헬스장 회원이 주차장을 이용한다면 주차장에서도 이용이 가능한 회원인지 확인해야 된다.
 public class ParkingLot {
 	private Member member;
@@ -46,6 +34,18 @@ public class ParkingLot {
 			return true;
 		}
 		return false;
+	}
+}
+````
+````java
+public class Member {
+	private Date expireDate;
+	private boolean isBlackConsumer = false;
+	public boolean isBlackConsumer() {
+		return isBlackConsumer;
+	}
+	public Date getExpireDate() {
+		return expireDate;
 	}
 }
 ````
