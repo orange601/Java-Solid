@@ -30,7 +30,7 @@
 	- 해당 인스턴스의 내부 구현이 바뀌더라도 영향을 받지 않는다.
 	- 다른객체의 인스턴스이므로 인터페이스를 이용하면 Type을 바꿀 수 있다.
 
-[참조:Effective-Java:상속보다는 컴포지션을 사용하라]([https://yeonees.notion.site/item-18-6b82a4bd1d7647cba555f800082a5581](https://github.com/orange601/Effective-Java/blob/main/%5Bitem-18%5D%20%EC%83%81%EC%86%8D%EB%B3%B4%EB%8B%A4%EB%8A%94%20%EC%BB%B4%ED%8F%AC%EC%A7%80%EC%85%98%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC./README.md))
+[참조:Effective-Java:상속보다는 컴포지션을 사용하라](https://github.com/orange601/Effective-Java/blob/main/%5Bitem-18%5D%20%EC%83%81%EC%86%8D%EB%B3%B4%EB%8B%A4%EB%8A%94%20%EC%BB%B4%ED%8F%AC%EC%A7%80%EC%85%98%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC./README.md)
 
 #### 👎 BAD ####
 ````java
