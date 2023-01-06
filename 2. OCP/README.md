@@ -48,6 +48,10 @@ public class LottoNumbersAutoGenerator {
 ````
 
 ## 👍 GOOD ## 
+
+#### 모듈이 만나는 지점에 인터페이스 정의 ####
+<img width="832" alt="98773008-5b5dce00-242b-11eb-9f09-149c6710d370" src="https://user-images.githubusercontent.com/24876345/210932368-1eb2116b-9810-4950-bebe-69fdf8cc475e.png">
+
 ````java
 // 인터페이스 추가
 @FunctionalInterface
