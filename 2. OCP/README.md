@@ -3,6 +3,7 @@
 
 ## 👎 BAD ##
 ````java
+// 로또 번호 추출기
 public class LottoNumbersAutoGenerator {
 	public List<Integer> generate(String shuffle) {
 		// 변경이 되지 않는 코드
