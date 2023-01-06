@@ -100,7 +100,8 @@ public class ShuffleReverseStrategy implements ShuffleStrategy {
 // 메인
 public class Application {
 	public static void main(String[] args) {
-		LottoNumbersAutoGenerator lnag = new LottoNumbersAutoGenerator(new ShuffleRandomStrategy()); // << client에서는 원하는기능을 추가하면 된다.
+		// client에서는 원하는 Shuffle(기능)을 추가하면 된다.
+		LottoNumbersAutoGenerator lnag = new LottoNumbersAutoGenerator(new ShuffleRandomStrategy()); 
 		List<Integer> numbers = lnag.generate();
 		System.out.println(numbers);
 	}
