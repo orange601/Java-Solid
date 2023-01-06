@@ -10,6 +10,7 @@ public class Gym {
 	}	
 	// 헬스장 이용이 가능한 회원인지 확인한다.
 	public boolean isNormalUser() {
+		// 만료날짜와 블랙컨슈머인지 확인한다.
 		if(member.getExpireDate().getDate() > System.currentTimeMillis()
 				&& !member.isBlackConsumer()) {
 			return true;
