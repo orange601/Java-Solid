@@ -17,7 +17,7 @@
 소프트웨어 구성 요소(컴포넌트, 클래스, 모듈, 함수)는 확장에 대해서는 개방(OPEN)되어야 하지만 변경에 대해서는 폐쇄(CLOSE)되어야 한다.
 ````
 - 기존의 코드를 변경하지 않으면서 기능을 추가할 수 있도록 설계가 되어야 한다.
-- [자세한설명](https://github.com/orange601/Java-Solid/blob/main/2.%20OCP/README.md)
+- [자세한예제](https://github.com/orange601/Java-Solid/blob/main/2.%20OCP/README.md)
 
 #### OCP 적용방법 ####
 1. 상속 (is-a)
