@@ -59,6 +59,10 @@ public class Application {
 }
 ````
 
+## 상속관계를 잘 표현한 예제 ##
+
+![011](https://user-images.githubusercontent.com/24876345/211248584-992fe733-f0f4-41a9-a830-3daf06d0f380.jpg)
+
 ### 👍 GOOD ###
 ````java
 public class Shape {
