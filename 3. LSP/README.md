@@ -1,8 +1,11 @@
 ### LSP (Liskov Subsititution Principle: 리스코프 치환 원칙) ###
 - 하위클래스 is a kind of 상위 클래스
 
-## 잘못된 상속 ##
+## 잘못 표현된 상속 예제 ##
 ![010](https://user-images.githubusercontent.com/24876345/211248578-894749e4-6dc0-4986-a490-00a78a189c61.jpg)
+
+## 잘 표현한 상속 예제 ##
+![011](https://user-images.githubusercontent.com/24876345/211248584-992fe733-f0f4-41a9-a830-3daf06d0f380.jpg)
 
 ### 👎 BAD ###
 ````java
@@ -59,9 +62,7 @@ public class Application {
 }
 ````
 
-## 상속관계를 잘 표현한 예제 ##
 
-![011](https://user-images.githubusercontent.com/24876345/211248584-992fe733-f0f4-41a9-a830-3daf06d0f380.jpg)
 
 ### 👍 GOOD ###
 ````java
