@@ -1,4 +1,4 @@
-### LSP (Liskov Subsititution Principle: 리스코프 치환 원칙) ###
+# LSP (Liskov Subsititution Principle: 리스코프 치환 원칙) #
 - 하위클래스 is a kind of 상위 클래스
 
 ## 잘못 표현된 상속 예제 ##
