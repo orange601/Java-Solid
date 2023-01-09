@@ -10,7 +10,7 @@
 한 클래스는 하나의 책임만 가져야 한다.
 ````
 - 책임이란 것에 대한 중요한 기준은 바로 "변경"이다. 변경이 생겼을 때 그에 따른 파급 효과가 적으면 SRP를 잘 따른 것이라고 볼 수 있다.
-
+- (Sample-예제)[https://github.com/orange601/Java-Solid/tree/main/1.%20SRP]
 
 ### 2. OCP (Open-Closed Principle: 개방 폐쇄 원칙) ###
 ````
