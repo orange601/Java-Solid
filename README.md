@@ -34,7 +34,7 @@
 
 	[참조-상속보다는 컴포지션을 사용하라](https://github.com/orange601/Effective-Java/blob/main/%5Bitem-18%5D%20%EC%83%81%EC%86%8D%EB%B3%B4%EB%8B%A4%EB%8A%94%20%EC%BB%B4%ED%8F%AC%EC%A7%80%EC%85%98%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC./README.md)
 
-#### 👎 BAD ####
+### 👎 BAD ###
 ````java
 public class Application {
 	public static void main(String[] args) {
@@ -96,7 +96,60 @@ public class Driver {
 ````
 - 하위클래스 is a kind of 상위 클래스
 
-#### 👎 BAD ####
+### 👎 BAD ###
+````java
+// 직사각형
+public class Rectangle {
+    protected int width;
+    protected int height;
+    public int getWidth() {
+        return width;
+    }
+    public int getHeight() {
+        return height;
+    }
+    public void setWidth(int width) {
+        this.width = width;
+    }
+    public void setHeight(int height) {
+        this.height = height;
+    }
+    public int getArea() {
+        return width * height;
+    }
+}
+````
+````java
+// 정사각형 가로세로 길이가 같다.
+public class Square extends Rectangle {
+    @Override
+    public void setWidth(int width) {
+        super.setWidth(width);
+        super.setHeight(getWidth());
+    }
+    @Override
+    public void setHeight(int height) {
+        super.setHeight(height);
+        super.setWidth(getHeight());
+    }
+}
+
+````
+````java
+public class Application {
+    public static void main(String[] args) {
+        Rectangle rectangle = new Rectangle(); // 직사각형 넓이;
+        rectangle.setWidth(10);
+        rectangle.setHeight(5);
+        System.out.println(rectangle.getArea()); // 50 예상과같음
+	
+	Rectangle square = new Square(); // 정사각형 넓이
+        square.setWidth(10);
+        square.setHeight(5);
+        System.out.println(square.getArea()); // 25 예상과다름
+    }
+}
+````
 
 ### 👍 GOOD ###
 
