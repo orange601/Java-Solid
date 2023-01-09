@@ -1,6 +1,9 @@
 ### LSP (Liskov Subsititution Principle: 리스코프 치환 원칙) ###
 - 하위클래스 is a kind of 상위 클래스
 
+## 잘못된 상속 ##
+![010](https://user-images.githubusercontent.com/24876345/211248578-894749e4-6dc0-4986-a490-00a78a189c61.jpg)
+
 ### 👎 BAD ###
 ````java
 // 직사각형
