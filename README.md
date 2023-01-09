@@ -152,6 +152,51 @@ public class Application {
 ````
 
 ### 👍 GOOD ###
+````java
+public class Shape {
+    protected int width;
+    protected int height;
+    public int getWidth() {
+        return width;
+    }
+    public int getHeight() {
+        return height;
+    }
+    public void setWidth(int width) {
+        this.width = width;
+    }
+    public void setHeight(int height) {
+        this.height = height;
+    }
+    public int getArea() {
+        return width * height;
+    }
+}
+````
+````java
+public class Rectangle extends Shape {
+    public Rectangle(int width, int height) {
+        super.setWidth(width);
+        super.setHeight(height);
+    }
+}
+public class Square extends Shape {
+    public Square(int length) {
+    	super.setWidth(length);
+        super.setHeight(length);
+    }
+}
+````
+````java
+public class Application {
+    public static void main(String[] args) {
+        Shape rectangle = new Rectangle(10, 5);
+        Shape square = new Square(5);
+        System.out.println(rectangle.getArea()); // 50
+        System.out.println(square.getArea()); // 25
+    }
+}
+````
 
 
 ### 4. ISP (Interface Segregation Principle: 인터페이스 분리 원칙) ###
