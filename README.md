@@ -5,6 +5,8 @@
 ## SOLID 원칙 ##
 - 객체 지향 설계의 5원칙
 
+
+
 ### 1. SRP (Single Responsibility Principle: 단일 책임 원칙) ###
 ````
 한 클래스는 하나의 책임만 가져야 한다.
@@ -12,11 +14,15 @@
 - 책임이란 것에 대한 중요한 기준은 바로 "변경"이다. 변경이 생겼을 때 그에 따른 파급 효과가 적으면 SRP를 잘 따른 것이라고 볼 수 있다.
 - [Sample-예제](https://github.com/orange601/Java-Solid/tree/main/1.%20SRP)
 
+
+
+
 ### 2. OCP (Open-Closed Principle: 개방 폐쇄 원칙) ###
 ````
 확장에 대해서는 개방(OPEN)되어야 하지만 변경에 대해서는 폐쇄(CLOSE)되어야 한다.
 ````
 - 기존의 코드를 변경하지 않으면서 기능을 추가할 수 있도록 설계가 되어야 한다.
+- 전략패턴: OCP를 준수하기 위한 패턴이 전략 패턴이다.
 - [자세한예제](https://github.com/orange601/Java-Solid/blob/main/2.%20OCP/README.md)
 
 #### OCP 적용방법 2가지 ####
