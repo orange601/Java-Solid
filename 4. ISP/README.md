@@ -45,4 +45,16 @@ public class Iphone implements SmartPhone, ApplePhone {
 	public void music() {
 	}
 }
+// 구
+public class Galaxy implements SmartPhone, SamsungPhone {
+	@Override
+	public void samsungPay() {
+	}
+	@Override
+	public void text() {
+	}
+	@Override
+	public void music() {
+	}
+}
 ````
