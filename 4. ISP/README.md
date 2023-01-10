@@ -1,4 +1,5 @@
 # ISP (Interface Segregation Principle: 인터페이스 분리 원칙) #
+- 상위 클래스는 풍성할수록 좋다
 
 ## 👎 BAD ##
 ````java
