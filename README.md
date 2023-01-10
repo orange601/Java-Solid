@@ -87,7 +87,7 @@ public class Driver {
 프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다.
 ````
 - 하위클래스 is a kind of 상위 클래스
-- [sample-예제](https://github.com/orange601/Java-Solid/blob/main/3.%20LSP/README.md)
+- [Sample-예제](https://github.com/orange601/Java-Solid/blob/main/3.%20LSP/README.md)
 
 
 ### 4. ISP (Interface Segregation Principle: 인터페이스 분리 원칙) ###
@@ -105,7 +105,7 @@ public class Driver {
 클라이언트는 구현 클래스에 의존하지 말고, 인터페이스에만 의존해야 한다.
 ````
 - 유연하게 구현체를 변경할 수 있다. 구현체에 의존하게 되면 변경이 어려워진다.
-
+- [Sample-예제](https://github.com/orange601/Java-Solid/tree/main/5.%20DIP)
 
 
 
