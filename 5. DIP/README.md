@@ -18,7 +18,7 @@ class Van {
 // 차량의 종류가 추가될 때마다 setCar의 함수가 늘어날 수 밖에 없는 구조 OCP 위반
 public class CarService {
     private Truck car1;
-	private Van car2
+    private Van car2;
     
     public void setCar1(Truck car1) {    
         this.car1 = car1;
@@ -32,7 +32,7 @@ public class CarService {
         return car1.drive();
     }
     
-        public String drive2() {
+    public String drive2() {
         return car2.drive();
     }
 }
