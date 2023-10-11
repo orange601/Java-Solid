@@ -1,6 +1,7 @@
 # OCP (Open-Closed Principle: 개방 폐쇄 원칙) #
 - 확장에 대해서는 개방(OPEN)되어야 하지만 변경에 대해서는 폐쇄(CLOSE)되어야 한다.
 - [로또번호추출기예제출처:우아한테크코스](https://www.youtube.com/watch?v=90ZDvHl8ROE)
+- 좋은 전략패턴참조: https://velog.io/@kimjungmin0426/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-%EC%A0%84%EB%9E%B5%ED%8C%A8%ED%84%B4
 
 #### OCP 적용방법 2가지 ####
 1. 상속 (is-a)
