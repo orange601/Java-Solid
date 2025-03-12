@@ -85,6 +85,8 @@ public class Driver {
 ### 3. LSP (Liskov Subsititution Principle: 리스코프 치환 원칙) ###
 ````
 프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다.
+
+부모 객체와 자식 객체가 있을 때 부모 객체를 호출하는 동작에서 자식 객체가 부모 객체를 완전히 대체할 수 있다는 원칙이다.
 ````
 - 하위클래스 is a kind of 상위 클래스
 - [Sample-예제](https://github.com/orange601/Java-Solid/blob/main/3.%20LSP/README.md)
